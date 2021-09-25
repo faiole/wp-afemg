@@ -13,7 +13,7 @@ const DesktopHeader = ({ state }) => {
         <Image src={Logo} alt='Logo'/>
         <Menu>
           <Link link="/">Home</Link>
-          <Link link="/">A AFEMG</Link>
+          <Link link="/sobre">A AFEMG</Link>
           <Link link="/">Educação <br/>Domiciliar</Link>
           <Link link="/">Perguntas <br/>e Respostas</Link>
           <Link link="/">Faça Parte</Link>

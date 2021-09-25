@@ -17,7 +17,7 @@ const Menu = ({ open, setOpen }) => {
     <MenuWrapper open={open} >
       <Image src={Logo} alt='Logo' onContextMenu={(e)=> e.preventDefault()} />
       <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Home</Link>
-      <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >A AFEMG</Link>
+      <Link rel="prefetch" link="/sobre" onClick={() => setOpen(!open)} >A AFEMG</Link>
       <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Educação Domiciliar</Link>
       <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Perguntas e Respostas</Link>
       <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Faça Parte</Link>

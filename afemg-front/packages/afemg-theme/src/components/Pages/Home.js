@@ -48,13 +48,3 @@ const Wrapper = styled.div`
     align-items: center;
   }
 `
-
-const Row = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-  > div {
-    padding: 5px;
-  }
-`

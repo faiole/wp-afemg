@@ -10,7 +10,6 @@ const Portfolio = ({ state, actions }) => {
 
   const data = state.source.get(state.router.link);
   const page = state.source[data.type][data.id];
-  let flashs = {};
 
   useEffect(() => {
     actions.source.fetch("/flash/");
@@ -24,11 +23,6 @@ const Portfolio = ({ state, actions }) => {
 
   return (
     <>
-      <Title>
-        <h1>{ page.acf.portfolioTitle }</h1>
-      </Title>
-      <Artist page={page} />
-      { flashs.length > 0 ? <Arts flashs={flashs} wpp={page.acf.portfolioContactWhatsapp} /> : <Loading/>}
     </>
   );
 }

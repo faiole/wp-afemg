@@ -11,6 +11,7 @@ import Footer from "./Blocks/Footer/Footer";
 
 //Pages
 import Home from "./Pages/Home";
+import About from "./Pages/About";
 import Error from "./Pages/Error";
 
 const Root = ({ state, actions }) => {
@@ -57,6 +58,7 @@ const Root = ({ state, actions }) => {
       <Main>
         <Switch>
           <Home when={data.route == '/'} />
+          <About when={data.route == '/sobre/'} />
           <Error when={data.isError} />
         </Switch>
       </Main>
