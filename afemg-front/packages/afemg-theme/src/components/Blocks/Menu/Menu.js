@@ -18,12 +18,12 @@ const Menu = ({ open, setOpen }) => {
       <Image src={Logo} alt='Logo' onContextMenu={(e)=> e.preventDefault()} />
       <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Home</Link>
       <Link rel="prefetch" link="/sobre" onClick={() => setOpen(!open)} >A AFEMG</Link>
-      <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Educação Domiciliar</Link>
-      <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Perguntas e Respostas</Link>
-      <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Faça Parte</Link>
+      <Link rel="prefetch" link="/educacao-domiciliar" onClick={() => setOpen(!open)} >Educação Domiciliar</Link>
+      <Link rel="prefetch" link="/perguntas-e-respostas" onClick={() => setOpen(!open)} >Perguntas e Respostas</Link>
+      <Link rel="prefetch" link="/faca-parte" onClick={() => setOpen(!open)} >Faça Parte</Link>
       <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Eventos</Link>
       <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Blog</Link>
-      <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Contato</Link>
+      <Link rel="prefetch" link="/contato" onClick={() => setOpen(!open)} >Contato</Link>
       <SocialLinks>
         <a href='' target="_blank"><Image src={InstagramIcon} alt='Instagram' /></a>
         <a href='' target="_blank"><Image src={FacebookIcon} alt='Facebook' /></a>

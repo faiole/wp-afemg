@@ -12,6 +12,10 @@ import Footer from "./Blocks/Footer/Footer";
 //Pages
 import Home from "./Pages/Home";
 import About from "./Pages/About";
+import Education from "./Pages/Education";
+import Questions from "./Pages/Questions";
+import Join from "./Pages/Join";
+import Contact from "./Pages/Contact";
 import Error from "./Pages/Error";
 
 const Root = ({ state, actions }) => {
@@ -59,6 +63,10 @@ const Root = ({ state, actions }) => {
         <Switch>
           <Home when={data.route == '/'} />
           <About when={data.route == '/sobre/'} />
+          <Education when={data.route == '/educacao-domiciliar/'} />
+          <Questions when={data.route == '/perguntas-e-respostas/'} />
+          <Join when={data.route == '/faca-parte/'} />
+          <Contact when={data.route == '/contato/'} />
           <Error when={data.isError} />
         </Switch>
       </Main>

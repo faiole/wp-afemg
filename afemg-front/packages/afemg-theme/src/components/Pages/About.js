@@ -8,6 +8,7 @@ import AboutBanner from '../Blocks/About/AboutBanner';
 import AboutBoard from '../Blocks/About/AboutBoard';
 import AboutMission from '../Blocks/About/AboutMission';
 import AboutValues from '../Blocks/About/AboutValues';
+import AboutHistory from '../Blocks/About/AboutHistory';
 import Loading from '../Blocks/Loading';
 
 const Showcase = ({ state }) => {
@@ -19,6 +20,7 @@ const Showcase = ({ state }) => {
       <AboutBoard page={state.source[data.type][data.id]} />
       <AboutMission page={state.source[data.type][data.id]} />
       <AboutValues page={state.source[data.type][data.id]} />
+      <AboutHistory page={state.source[data.type][data.id]} />
     </Wrapper>
   ) : <Loading />;
 }

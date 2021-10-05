@@ -22,6 +22,7 @@ const Wrapper = styled.section`
   color: #fab03b;
   background-color: #ffffff;
 `
+
 const Content = styled.div`
   margin: 5rem 1rem;
 

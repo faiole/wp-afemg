@@ -4,22 +4,20 @@ import { isMobile } from "react-device-detect";
 import Link from "@frontity/components/link";
 
 //Blocks
-import ContactBanner from '../Blocks/Contact/ContactBanner';
-import ContactForm from '../Blocks/Contact/ContactForm';
+import BlogBanner from '../Blocks/Blog/BlogBanner';
 import Loading from '../Blocks/Loading';
 
-const Contact = ({ state }) => {
+const Blog = ({ state }) => {
   const data = state.source.get(state.router.link);
 
   return data.isReady ? (
     <Wrapper>
-      <ContactBanner page={state.source[data.type][data.id]} />
-      <ContactForm page={state.source[data.type][data.id]} />
+      <BlogBanner page={state.source[data.type][data.id]} />
     </Wrapper>
   ) : <Loading />;
 }
 
-export default connect(Contact);
+export default connect(Blog);
 
 const Wrapper = styled.div`
   display: flex;

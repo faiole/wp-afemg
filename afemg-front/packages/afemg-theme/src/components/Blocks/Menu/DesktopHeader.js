@@ -14,12 +14,12 @@ const DesktopHeader = ({ state }) => {
         <Menu>
           <Link link="/">Home</Link>
           <Link link="/sobre">A AFEMG</Link>
-          <Link link="/">Educação <br/>Domiciliar</Link>
-          <Link link="/">Perguntas <br/>e Respostas</Link>
-          <Link link="/">Faça Parte</Link>
+          <Link link="/educacao-domiciliar">Educação <br/>Domiciliar</Link>
+          <Link link="/perguntas-e-respostas">Perguntas <br/>e Respostas</Link>
+          <Link link="/faca-parte">Faça Parte</Link>
           <Link link="/">Eventos</Link>
           <Link link="/">Blog</Link>
-          <Link link="/">Contato</Link>
+          <Link link="/contato">Contato</Link>
         </Menu>
       </HeaderContent>
     </Wrapper>

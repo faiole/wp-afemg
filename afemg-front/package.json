@@ -23,6 +23,7 @@
     "@frontity/wp-source": "^1.11.5",
     "afemg-theme": "file:packages/afemg-theme",
     "frontity": "^1.17.0",
-    "react-device-detect": "^1.17.0"
+    "react-device-detect": "^1.17.0",
+    "react-responsive-carousel": "^3.2.21"
   }
 }
