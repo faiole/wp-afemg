@@ -18,7 +18,7 @@ const DesktopHeader = ({ state }) => {
           <Link link="/perguntas-e-respostas">Perguntas <br/>e Respostas</Link>
           <Link link="/faca-parte">Faça Parte</Link>
           <Link link="/">Eventos</Link>
-          <Link link="/">Blog</Link>
+          <Link link="/blog">Blog</Link>
           <Link link="/contato">Contato</Link>
         </Menu>
       </HeaderContent>

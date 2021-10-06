@@ -7,7 +7,14 @@ const ContactJoin = ({ page }) => {
     <Wrapper>
       <Title>{page.acf.contactJoinTitle}</Title>
       <Subtitle>{page.acf.contactJoinSubtitle}</Subtitle>
-
+      <Options>
+        {page.acf.contactJoinOption.map((item, i) => (
+          <Item key={i}>
+            <p>{item.description}</p>
+            <Link link={item.link}>{item.cta}</Link>
+          </Item>
+        ))}
+      </Options>
     </Wrapper>
   );
 }
@@ -15,7 +22,7 @@ const ContactJoin = ({ page }) => {
 export default ContactJoin;
 
 const Wrapper = styled.section`
-  background-color: #ffffff;
+  background-color: #eeeeee;
   padding: 6rem 1rem;
 
   > a {
@@ -56,5 +63,47 @@ const Subtitle = styled.h3`
 `
 
 const Options = styled.div`
-  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`
+
+const Item = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+
+  @media (min-width: 720px) {
+    margin: 0 3rem;
+    width: 20%;
+
+    > p {
+      width: 80%;
+    }
+  }
+
+  > p {
+    text-align: center;
+    color: #1f3452;
+    font-size: 1.3rem;
+  }
+
+  > a {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    margin: 5px 0;
+    color: #ffffff;
+    border-radius: 30px;
+    border: 0;
+    background-color: #fab03b;
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+
+    :hover {
+      filter: brightness(70%);
+      cursor: pointer;
+    }
+  }
 `

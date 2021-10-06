@@ -22,7 +22,7 @@ const Menu = ({ open, setOpen }) => {
       <Link rel="prefetch" link="/perguntas-e-respostas" onClick={() => setOpen(!open)} >Perguntas e Respostas</Link>
       <Link rel="prefetch" link="/faca-parte" onClick={() => setOpen(!open)} >Faça Parte</Link>
       <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Eventos</Link>
-      <Link rel="prefetch" link="/" onClick={() => setOpen(!open)} >Blog</Link>
+      <Link rel="prefetch" link="/blog" onClick={() => setOpen(!open)} >Blog</Link>
       <Link rel="prefetch" link="/contato" onClick={() => setOpen(!open)} >Contato</Link>
       <SocialLinks>
         <a href='' target="_blank"><Image src={InstagramIcon} alt='Instagram' /></a>

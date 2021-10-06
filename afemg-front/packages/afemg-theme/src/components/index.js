@@ -16,6 +16,8 @@ import Education from "./Pages/Education";
 import Questions from "./Pages/Questions";
 import Join from "./Pages/Join";
 import Contact from "./Pages/Contact";
+import Blog from "./Pages/Blog";
+import BlogPost from "./Pages/BlogPost";
 import Error from "./Pages/Error";
 
 const Root = ({ state, actions }) => {
@@ -67,6 +69,8 @@ const Root = ({ state, actions }) => {
           <Questions when={data.route == '/perguntas-e-respostas/'} />
           <Join when={data.route == '/faca-parte/'} />
           <Contact when={data.route == '/contato/'} />
+          <Blog when={data.route == '/blog/'} />
+          <BlogPost when={data.isPostType} />
           <Error when={data.isError} />
         </Switch>
       </Main>

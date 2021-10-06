@@ -11,59 +11,65 @@ import WhatsappIcon from '../../../images/whatsapp.svg'
 
 const Footer = () => {
   return (
-    <Wrapper>
-      <LogoContainer>
-        <Image src={Logo} />
-      </LogoContainer>
-      <Content>
-        <Left>
-          <Title>ASSOCIAÇÃO DE FAMÍLIAS EDUCADORAS DE MINAS GERAIS</Title>
-          <p>Associação civil sem fins lucrativos, inscrita no CNPJ/MF sob o número xx.xxx.xxx/0001-xx</p>
-          <CTA>Associe-se</CTA>
-        </Left>
-        <Right>
-          <SocialLinks>
-            <a href='' target="_blank"><Image src={InstagramIcon} alt='Instagram' /></a>
-            <a href='' target="_blank"><Image src={FacebookIcon} alt='Facebook' /></a>
-            <a href='' target="_blank"><Image src={WhatsappIcon} alt='Whatsapp' /></a>
-          </SocialLinks>
-          <Contact>
-            <p>(31) 9 9999-9999</p>
-            <p>contato@afemg.com.br</p>
-          </Contact>
-        </Right>
-        <Line />
-        <LinksContainer>
-          <Links>
-            <Link link="/">Home</Link>
-            <Link link="/">A AFEMG</Link>
-            <Link link="/">Educação Domiciliar</Link>
-            <Link link="/">Perguntas e Respostas</Link>
-          </Links>
-          <Links>
-            <Link link="/">Faça Parte</Link>
-            <Link link="/">Eventos</Link>
-            <Link link="/">Blog</Link>
-            <Link link="/">Contato</Link>
-          </Links>
-        </LinksContainer>
-      </Content>
-    </Wrapper>
+    <FooterWrapper>
+      <Holder>
+        <LogoContainer>
+          <Image src={Logo} />
+        </LogoContainer>
+        <Content>
+          <Left>
+            <Title>ASSOCIAÇÃO DE FAMÍLIAS EDUCADORAS DE MINAS GERAIS</Title>
+            <p>Associação civil sem fins lucrativos, inscrita no CNPJ/MF sob o número xx.xxx.xxx/0001-xx</p>
+            <CTA>Associe-se</CTA>
+          </Left>
+          <Right>
+            <SocialLinks>
+              <a href='' target="_blank"><Image src={InstagramIcon} alt='Instagram' /></a>
+              <a href='' target="_blank"><Image src={FacebookIcon} alt='Facebook' /></a>
+              <a href='' target="_blank"><Image src={WhatsappIcon} alt='Whatsapp' /></a>
+            </SocialLinks>
+            <Contact>
+              <p>(31) 9 9999-9999</p>
+              <p>contato@afemg.com.br</p>
+            </Contact>
+          </Right>
+          <Line />
+          <LinksContainer>
+            <Links>
+              <Link link="/">Home</Link>
+              <Link link="/">A AFEMG</Link>
+              <Link link="/">Educação Domiciliar</Link>
+              <Link link="/">Perguntas e Respostas</Link>
+            </Links>
+            <Links>
+              <Link link="/">Faça Parte</Link>
+              <Link link="/">Eventos</Link>
+              <Link link="/">Blog</Link>
+              <Link link="/">Contato</Link>
+            </Links>
+          </LinksContainer>
+        </Content>
+      </Holder>
+    </FooterWrapper>
   );
 }
  
 export default Footer;
 
-const Wrapper = styled.footer`
+const FooterWrapper = styled.footer`
+  background-color: #ffffff;
+`
+
+const Holder = styled.div`
   width: 100%;
-  margin: 5rem 1rem;
+  padding: 5rem 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   color: #203451;
 
   @media (min-width: 720px) {
-    margin: 5rem 0;
+    padding: 5rem 0;
   }
 `
 

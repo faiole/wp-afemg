@@ -6,6 +6,7 @@ import Link from "@frontity/components/link";
 //Blocks
 import ContactBanner from '../Blocks/Contact/ContactBanner';
 import ContactForm from '../Blocks/Contact/ContactForm';
+import ContactJoin from '../Blocks/Contact/ContactJoin';
 import Loading from '../Blocks/Loading';
 
 const Contact = ({ state }) => {
@@ -15,6 +16,7 @@ const Contact = ({ state }) => {
     <Wrapper>
       <ContactBanner page={state.source[data.type][data.id]} />
       <ContactForm page={state.source[data.type][data.id]} />
+      <ContactJoin page={state.source[data.type][data.id]} />
     </Wrapper>
   ) : <Loading />;
 }

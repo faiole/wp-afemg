@@ -15,7 +15,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "http://afemg.local/wp-json/",
+          "api": "https://afemg.fms.net.br/wp-json/",
         }
       }
     },
